@@ -1,0 +1,68 @@
+.clip-hide {
+	position: absolute !important;
+	left: -9999rem !important;
+	height: 1px !important;
+	width: 1px !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	overflow: hidden !important;
+}
+
+#wc-review-page > * {
+	margin: 1rem 0;
+}
+
+#wc-review-page > *:first-child {
+	margin-top: 0;
+}
+
+#wc-review-page > *:last-child {
+	margin-bottom: 0;
+}
+
+#wc-review-page .col-set {
+	width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#wc-review-page .col-set > * {
+	margin: 0 0 2rem;
+	width: 100%;
+}
+
+#wc-review-page h3 {
+	margin-bottom: 0.5rem;
+}
+
+.return-checkout-link,
+.reset-checkout-link {
+	display: block;
+}
+
+.wwcr-review-row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@media screen and (min-width: 768px) {
+	#wc-review-page .col-set {
+		margin-right: -1rem;
+		margin-left: -1rem;
+	}
+
+	#wc-review-page .col-set > * {
+		margin-right: 1rem;
+		margin-left: 1rem;
+		width: calc( 50% - 2rem );
+	}
+
+	form.woocommerce-checkout #payment button[type="submit"],
+	#wc-review-page button[type="submit"] {
+		margin: 0;
+		float: right;
+	}
+}
